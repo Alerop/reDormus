@@ -1,0 +1,31 @@
+#head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: blanchedalmond;
+}
+#head > h1 {
+    text-align: center;
+}
+
+#body {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    height: 60%;
+    bottom: 20%;
+    background: rosybrown;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+    background: aquamarine;
+
+}
