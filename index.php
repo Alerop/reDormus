@@ -6,10 +6,21 @@
     </head>
     <body>
         <div id="head">
-            <h1>Hello World</h1>
+            <h1>reDormus</h1>
         </div>
         <div id="body">
-
+            <div class="login">
+                <form  method="get" action="#">
+                    <img class="icons" src="https://img.icons8.com/android/24/000000/user.png">
+                    <label for="user">
+                        <input placeholder="User" name="user" type="text"/>
+                    </label>
+                    <img class="icons" src="https://img.icons8.com/android/24/000000/unlock.png">
+                    <label for="pass">
+                        <input placeholder="Password" name="pass" type="password"/>
+                    </label>
+                </form>
+            </div>
         </div>
         <div id="footer">
 
