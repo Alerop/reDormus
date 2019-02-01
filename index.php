@@ -26,6 +26,8 @@
                         </label>
                     </div>
 
+                    <input class="button-submit" type="submit" value="PáEntro" />
+
                 </form>
             </div>
         </div>
