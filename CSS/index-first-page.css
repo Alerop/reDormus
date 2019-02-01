@@ -9,6 +9,7 @@
     padding: 30px;
     min-height: 200px;
     margin-top: 5%;
+    box-shadow: 1px 7px 40px 15px rgba(0,0,0,0.19)
 }
 
 .login > form {
