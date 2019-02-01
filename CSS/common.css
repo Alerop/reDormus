@@ -11,10 +11,6 @@ html {
     background: blanchedalmond;
 }
 
-#head > h1 {
-    text-align: center;
-}
-
 #body {
     position: absolute;
     top: 20%;
@@ -24,6 +20,7 @@ html {
     bottom: 20%;
     background: rosybrown;
     text-align: center;
+    overflow: auto;
 }
 
 #footer {
@@ -34,21 +31,4 @@ html {
     height: 20%;
     background: aquamarine;
 
-}
-
-.login {
-    border: 2px solid black;
-    display: inline-block;
-    position: relative;
-    padding: 30px;
-    min-height: 200px;
-    margin-top: 5%;
-}
-
-.login > form {
-    display: table-caption;
-}
-
-.login > form input {
-    margin-bottom: 20%;
 }

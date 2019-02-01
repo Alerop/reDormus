@@ -1,0 +1,21 @@
+#head > h1 {
+    text-align: center;
+}
+
+.login {
+    border: 2px solid black;
+    display: inline-block;
+    position: relative;
+    padding: 30px;
+    min-height: 200px;
+    margin-top: 5%;
+}
+
+.login > form {
+    display: table-caption;
+    float: left;
+}
+
+.login > form input {
+    margin-bottom: 20%;
+}
