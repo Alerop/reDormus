@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <html lang="es">
     <head>
-        <meta utf="8">
+        <meta charset="UTF-8">
+        <title>reDormu</title>
+
         <script src="JS/test1.js" type="text/javascript"></script>
         <link rel="stylesheet" href="CSS/common.css" type="text/css" >
         <link rel="stylesheet" href="CSS/index-first-page.css" type="text/css" >
