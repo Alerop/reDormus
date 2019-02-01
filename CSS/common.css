@@ -1,5 +1,5 @@
 html {
-    font-family: Consolas;
+    font-family: Consolas, sans-serif;
 }
 
 #head {
@@ -38,6 +38,7 @@ html {
     border-radius: 15px;
     padding: 15px 25px;
     border: 2px solid black;
+    font-family: Consolas, sans-serif;
 }
 
 .button-submit:hover {
