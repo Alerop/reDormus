@@ -35,7 +35,7 @@ html {
 
 .button-submit {
     background-color: white;
-    border-radius: 20% 20%;
+    border-radius: 15px;
     padding: 15px 25px;
     border: 2px solid black;
 }
