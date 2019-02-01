@@ -32,3 +32,17 @@ html {
     background: aquamarine;
 
 }
+
+.button-submit {
+    background-color: white;
+    border-radius: 20% 20%;
+    padding: 15px 25px;
+    border: 2px solid black;
+}
+
+.button-submit:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
