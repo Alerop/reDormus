@@ -14,3 +14,5 @@
 
 //Para fondo de botones - Agradecimientos: <a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de fondo creado por rawpixel.com - www.freepik.es</a>
 //https://www.freepik.es/vector-gratis/elementos-pinceladas-acuarela_1168632.htm
+
+//Para favicon - Agradecimientos: //<a href="https://www.freepik.es/fotos-vectores-gratis/fondo">Vector de fondo creado por freepik - www.freepik.es</a>
