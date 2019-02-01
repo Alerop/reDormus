@@ -16,6 +16,6 @@
     float: left;
 }
 
-.login > form input {
+.login > form input:not([type="submit"]) {
     margin-bottom: 20%;
 }
