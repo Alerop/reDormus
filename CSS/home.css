@@ -20,3 +20,8 @@
 .login > form input:not([type="submit"]) {
     margin-bottom: 20%;
 }
+
+.logicon{
+    float: left;
+    margin-right: 10px;
+}
