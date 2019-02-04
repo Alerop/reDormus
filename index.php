@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="CSS/index-first-page.css" type="text/css" >
     </head>
     <body>
+
+    <?php
+        header("location: /reDormus/pages/html/home.html");
+    ?>
+
+
         <div id="head">
             <h1>reDormus</h1>
         </div>
