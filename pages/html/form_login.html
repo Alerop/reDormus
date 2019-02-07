@@ -9,58 +9,89 @@
     <link rel="stylesheet" href="../../CSS/common.css" type="text/css" >
     <link rel="stylesheet" href="../../CSS/form_login.css" type="text/css" >
 
-    <!--Ver con Ale, y traladar fuera-->
-    <!--
-    <script type="text/javascript">
-        function mostrar() {
-            if (document.formulario.este.checked == true){
-                document.getElementById('bd_user').style.display='block'
-            }
-            else{
-                document.getElementById('bd_user').style.display='none';
-            }
-
-        }
-    </script>
-    -->
-
 </head>
 <body>
 
-    <form action="" method="" id="formulario" name="formulario">
-
+    <form  action="#" method="get" id="formulario" class="formi" name="formulario">
         <div id="bd_datos">
             <div>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" />
+                <input name="nombre" type="text" id="nombre" />
             </div>
             <div>
                 <label for="ape1">Apellido 1:</label>
-                <input type="text" id="ape1" />
+                <input name="ape1" type="text" id="ape1" />
             </div>
             <div>
                 <label for="ape2">Apellido 2:</label>
-                <input type="text" id="ape2" />
+                <input name="ape2" type="text" id="ape2" />
             </div>
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email" id="este" name="este" />
+                <input name="email" type="email" id="email" />
             </div>
         </div>
 
-        <!--Esto que aparezca al estar rellena la clase -> #bd_datos-->
-        <div id="bd_user">
+        <div id="bd_user" >
             <div>
                 <label for="apodo">Apodo:</label>
-                <input type="text" id="apodo" />
+                <input disabled name="apodo" type="text" id="apodo" />
             </div>
             <div>
                 <label for="pass">Contraseña:</label>
-                <input type="password" id="pass" />
+                <input disabled name="pass" type="password" id="pass" />
             </div>
         </div>
 
+        <input disabled class="button-submit centr" type="submit" value="BOTON"/>
     </form>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../../JS/test1.js"></script>
+    <script type="text/javascript">
+
+        document.getElementById('formulario').addEventListener('input', function(){
+            mostrar();
+        });
+        function mostrar() {
+            let tagNameInputs = document.getElementsByTagName("input");
+            let long = tagNameInputs.length;
+            let bool = true;
+            let longJ = long-3;
+            let cont;
+            let divDisabled = document.getElementById("bd_user");
+            for (let i = 0; i <= long; i++){
+                if (tagNameInputs[i] !== undefined){
+                    if (bool) {
+                        let attName = tagNameInputs[i].getAttribute('name');
+                        let tagTypeInputs = tagNameInputs[i].getAttribute("type");
+                        if (attName !== 'apodo' && attName !== 'pass' && tagTypeInputs !== 'submit') {
+                            cont = 0;
+                            for (let j = 0; j <= longJ; j++) {
+                                let attNameJ = tagNameInputs[j].getAttribute('name');
+                                if (attNameJ !== 'apodo' && attNameJ !== 'pass' && tagTypeInputs !== 'submit') {
+                                    if (tagNameInputs[j].value === ''){
+                                        bool = false;
+                                        break;
+                                    }else {
+                                        cont++;
+                                    }
+                                }
+                            }
+                            if (cont === longJ) {
+                                $('#bd_user').animate({
+                                    visibility: 'visible'
+                                }, 2000);
+                                // divDisabled.hidden = false;
+                                document.getElementById('apodo').disabled = false;
+                                document.getElementById('pass').disabled = false;
+                                document.getElementsByClassName('button-submit centr')[0].disabled = false;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
