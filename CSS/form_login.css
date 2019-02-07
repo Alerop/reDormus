@@ -16,7 +16,7 @@ label {
     text-align: right;
 }
 
-input, textarea {
+input:not([type="submit"]) {
     font: 1em Consolas;
     width: 300px;
     -moz-box-sizing: border-box;
@@ -24,11 +24,18 @@ input, textarea {
     border: 1px solid #999;
 }
 
+.centr{
+    position: relative;
+    left: 40%;
+    margin-top: 1em;
+}
+
 #bd_user{
     position: relative;
     padding: 1em;
     border: 1px solid black;
     border-radius: 4px;
+    visibility: hidden;
 }
 
 #bd_user input, textarea{
