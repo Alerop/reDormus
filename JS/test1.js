@@ -1,2 +1,3 @@
-var a = "Hello World";
- console.log(a);
+$(document).ready(function () {
+   console.log('hola');
+});

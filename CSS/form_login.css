@@ -35,7 +35,6 @@ input:not([type="submit"]) {
     padding: 1em;
     border: 1px solid black;
     border-radius: 4px;
-    visibility: hidden;
 }
 
 #bd_user input, textarea{
