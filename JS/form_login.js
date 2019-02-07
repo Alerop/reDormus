@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-    const bdUser = $('#bd_user');
-    //ocultar el div bd_user al inicio
-    bdUser.hide();
-
     function mostrar() {
         let tagNameInputs = document.getElementsByTagName("input");
         let long = tagNameInputs.length;
@@ -35,7 +31,7 @@ $(document).ready(function () {
         }
 
         if (cont === longJ) {
-            bdUser.slideDown('slow');
+            $('#bd_user').slideDown('slow');
             // divDisabled.hidden = false;
             document.getElementById('apodo').disabled = false;
             document.getElementById('pass').disabled = false;
