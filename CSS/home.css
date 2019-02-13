@@ -17,11 +17,16 @@
     float: left;
 }
 
-.login > form input:not([type="submit"]) {
+.login > form input:not([type="submit"]):not([type="button"]) {
     margin-bottom: 20%;
 }
 
 .logicon{
     float: left;
     margin-right: 10px;
+}
+
+#registro {
+    display: block;
+    margin: 10% auto auto auto;
 }
